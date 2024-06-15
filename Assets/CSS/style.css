@@ -1,0 +1,436 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0D0D3F;
+    color: white;
+}
+
+header {
+    background-color: #0A0A3D;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav ul{
+    margin-right: 3rem;
+}
+
+.top-log{
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    cursor: pointer;
+}
+
+
+.logo {
+    margin-left: 2rem;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.mobile-nav{
+    display: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+#menu-btn, #close-btn{
+    display: none;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #0D0D3F;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin-left: 3rem;
+    margin-top: 2rem;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin: 20px 0;
+    font-size: 1.2em;
+}
+
+.register-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: #45A049;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+    padding-left: 2rem;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .hero-content {
+        max-width: none;
+        width: 50%;
+    }
+
+    .hero-image {
+        width: 50%;
+    }
+
+}
+
+
+
+.specialities {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #ffffff;
+}
+
+.specialities h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #0F0F4F;
+}
+
+.specialities p {
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #b0b0b0;
+}
+
+.specialities-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.speciality {
+    background-color: #0D0D3F;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+.speciality img {
+    width: 80px;
+    height: auto;
+}
+
+.speciality h3 {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.speciality p {
+    margin-top: 10px;
+    color: #D3D3D3;
+}
+
+/* Cypto Sec */
+
+
+
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.crypto-prices {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.crypto-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+.crypto-info {
+    display: flex;
+    align-items: center;
+}
+
+.crypto-info img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
+.crypto-info div {
+    display: flex;
+    flex-direction: column;
+}
+
+.crypto-info .price {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.crypto-info .name {
+    color: #777;
+    font-size: 14px;
+}
+
+.crypto-change {
+    text-align: right;
+}
+
+.crypto-change .percentage {
+    color: #E74C3C;
+    margin: 0;
+    font-size: 14px;
+}
+
+.crypto-change img {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+}
+
+.dashboard {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.dashboard h4 {
+    margin: 0 0 10px 0;
+}
+
+.dashboard img {
+    width: 100%;
+}
+
+.info-section {
+    flex: 1;
+    margin-left: 40px;
+}
+
+.info-section h2 {
+    font-size: 28px;
+    color: #eeeeee;
+}
+
+.info-section p {
+    color: #777;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.info-section button {
+    padding: 10px 20px;
+    background-color: #3B82F6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.info-section button:hover {
+    background-color: #2563EB;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-section {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    .crypto-prices {
+        width: 100%;
+    }
+
+    .crypto-card, .dashboard {
+        width: 100%;
+    }
+
+    header{
+        display: flex;
+    }
+
+    #menu-btn{
+        display: block;
+        margin-left: auto;
+    }
+
+    .desktop-nav{
+        display: none;
+    }
+
+    .mobile-nav{
+        flex-direction: row;
+    }
+
+}
+
+/* Cypto sec */
+
+/* Footer */
+
+footer {
+    background-color: #092A6E;
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.logo p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.social a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.company, .resource, .address {
+    flex: 1;
+    margin: 10px;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+ul li a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-social, .links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .company, .resource, .address {
+        margin: 20px 0;
+    }
+}
